@@ -12,7 +12,7 @@ const {status, data = {}} = useQuery([PAGE_KEY, {id: 2}], fetchData, {
     const {friends = []} = result;
     const fooData = friends.find((friend) => friend.id === 1);
     if(fooData) {
-      queryCache.setQueryData([FOO_PAGE_KEY, {id: 1}], fooData);
+      queryCache.setQueryData([FOO_PAGE_KEY, {id: 1}], fooData, {staleTime: 0});
     }
   }
 });

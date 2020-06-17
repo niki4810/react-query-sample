@@ -7,9 +7,7 @@ import {fetchData} from "../utils";
 
 export const PAGE_KEY = "FOO";
 const Foo = () => {
-const {status, data = {}} = useQuery([PAGE_KEY, {id: 1}], fetchData, {
-  staleTime: 0
-});
+const {status, data = {}} = useQuery([PAGE_KEY, {id: 1}], fetchData);
 
  return (
    <Base status={status} data={data}>
