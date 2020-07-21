@@ -942,6 +942,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.10.5":
+  version "7.10.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.5.tgz#303d8bd440ecd5a491eae6117fd3367698674c5c"
+  integrity sha512-otddXKhdNn7d0ptoFRHtMLa8LqDxLYwTjB4nYgM1yy5N6gU/MUf8zqyyLltCH3yAVitBzmwK4us+DD0l/MauAg==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime@^7.8.4":
   version "7.10.2"
   resolved "https://npme.walmart.com/@babel/runtime/-/runtime-7.10.2.tgz#d103f21f2602497d38348a32e008637d506db839"
@@ -1020,6 +1027,11 @@
   version "9.4.4"
   resolved "https://npme.walmart.com/@next/react-refresh-utils/-/react-refresh-utils-9.4.4.tgz#d94cbb3b354a07f1f5b80e554d6b9e34aba99e41"
   integrity sha512-9nKENeWRI6kQk44TbeqleIVtNLfcS3klVUepzl/ZCqzR5Bi06uqBCD277hdVvG/wL1pxA+R/pgJQLqnF5E2wPQ==
+
+"@scarf/scarf@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@scarf/scarf/-/scarf-1.0.6.tgz#52011dfb19187b53b75b7b6eac20da0810ddd88f"
+  integrity sha512-y4+DuXrAd1W5UIY3zTcsosi/1GyYT8k5jGnZ/wG7UUHVrU+MHlH4Mp87KK2/lvMW4+H7HVcdB+aJhqywgXksjA==
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
@@ -3345,9 +3357,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.17.11, lodash@^4.17.13:
-  version "4.17.15"
-  resolved "https://npme.walmart.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
@@ -3389,6 +3401,14 @@ map-visit@^1.0.0:
   integrity sha1-7Nyo8TFE5mDxtb1B8S80edmN+48=
   dependencies:
     object-visit "^1.0.0"
+
+match-sorter@^4.1.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/match-sorter/-/match-sorter-4.2.0.tgz#70c4e7443dacf5fa2503bc5afc189024092e9d27"
+  integrity sha512-oEvLn8R+a30YZ9l5XdCTkYQuLsOs8frxEqQTAuxoqkQx/qV5pQpx/NqAWvJ5xbYecqfXoF/ZevaIS1+NkbRymg==
+  dependencies:
+    "@babel/runtime" "^7.10.5"
+    remove-accents "0.4.2"
 
 md5.js@^1.3.4:
   version "1.3.5"
@@ -4514,6 +4534,21 @@ react-is@16.13.1, react-is@^16.8.1:
   resolved "https://npme.walmart.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-query-devtools@^1.1.17:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-query-devtools/-/react-query-devtools-1.2.0.tgz#3b6cc2d6a1d3d976b51bf1860418908869544555"
+  integrity sha512-+5QtShHHItxwvmdrsSGVZSQb3C+O7pmaLvgXf6JjtK+ocVmIlpR0aaBlq+Unb30j+w4ZkytT6Njf9/XWk638yQ==
+  dependencies:
+    match-sorter "^4.1.0"
+
+react-query@^1.5.6:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/react-query/-/react-query-1.5.10.tgz#9b23af061e8171e95503e1932cc07d0cebe806eb"
+  integrity sha512-Kjgii5rK1g9kpLCUGBeGIqFG0IoAMe/oRKzpIfNQUyegJ/Lh5o9lmbmpTPMBWbP3gZDFfAC3081llqxg7QiqCg==
+  dependencies:
+    "@scarf/scarf" "^1.0.6"
+    ts-toolbelt "^6.9.4"
+
 react-refresh@0.8.3:
   version "0.8.3"
   resolved "https://npme.walmart.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
@@ -4632,6 +4667,11 @@ regjsparser@^0.6.4:
   integrity sha512-64O87/dPDgfk8/RQqC4gkZoGyyWFIEUTTh80CU6CWuK5vkCGyekIx+oKcEIYtP/RAxSQltCZHCNu/mdd7fqlJw==
   dependencies:
     jsesc "~0.5.0"
+
+remove-accents@0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/remove-accents/-/remove-accents-0.4.2.tgz#0a43d3aaae1e80db919e07ae254b285d9e1c7bb5"
+  integrity sha1-CkPTqq4egNuRngeuJUsoXZ4ce7U=
 
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
@@ -5303,6 +5343,11 @@ ts-pnp@^1.1.6:
   version "1.2.0"
   resolved "https://npme.walmart.com/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==
+
+ts-toolbelt@^6.9.4:
+  version "6.13.11"
+  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-6.13.11.tgz#46260d1cff0f2d635931df8d32239b73f2ed4f8d"
+  integrity sha512-QmvHwAofS1MAn1ndXCn2AVhxJLipaj4tK26SrhBTiydfgKtbLlU2efpIP/8Jocrc9ynNslZqrhqAesruJMlxCQ==
 
 tslib@^1.9.0:
   version "1.13.0"
